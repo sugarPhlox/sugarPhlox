@@ -1,0 +1,6 @@
+[submodule "lavender"]
+	path = lavender
+	url = git@github.com:golavender/lavender.git
+[submodule "composer"]
+	path = composer
+	url = git@github.com:composer/composer.git

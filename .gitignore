@@ -1,0 +1,7 @@
+/bootstrap/compiled.php
+/vendor
+composer.phar
+.vagrant
+.idea
+/public/css
+/node_modules
