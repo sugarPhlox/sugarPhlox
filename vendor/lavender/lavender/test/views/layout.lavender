@@ -1,0 +1,14 @@
+!!!
+
+IE lte 9
+  script(src="Asdfasdf")
+
+h1 welcome to the new #{"templating"|title} era motherfucker
+
+h2= title | default('default')
+
+block content
+  | default
+
+block content2
+  | default
