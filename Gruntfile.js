@@ -12,7 +12,7 @@ module.exports = function(grunt) {
 
           var command     = "php vendor/lavender/src/Lavender/lavender-cli.php views $view $destination;"
             , view        = "view=$(echo $file | sed -e 's/\\.lavender$//' | sed -e 's/^views\\///');"
-            , destination = "destination=$(echo $file | sed -e 's/lavender$/html/' | sed -e 's/^views\\///');"
+            , destination = "destination=$(echo $file | sed -e 's/lavender$/html/' | sed -e 's/^views/public/');"
             , loop = "for file in `ls views/*.lavender`; do " + view + destination + command + "done"
 
           return loop;
