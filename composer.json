@@ -1,9 +1,0 @@
-{
-  "name": "sugarPhlox",
-  "description": "personal site",
-  "keywords": [],
-  "type": "project",
-  "require": {
-    "lavender/lavender": "*"
-  }
-}

@@ -1,0 +1,10 @@
+!!!
+
+html
+  head
+    title
+      block title
+
+
+body
+  block content

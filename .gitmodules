@@ -4,3 +4,6 @@
 [submodule "composer"]
 	path = composer
 	url = git@github.com:composer/composer.git
+[submodule "vendor/vagrantfile"]
+	path = vendor/vagrantfile
+	url = https://github.com/daftlabs/vagrantfile.git

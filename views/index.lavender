@@ -1,0 +1,8 @@
+extends layouts/default
+
+block title
+  | sugarPhlox
+
+block content
+	h1 Hello World!
+	h2 Testing

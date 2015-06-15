@@ -1,4 +1,0 @@
-
-div(style="border: 1px solid orange; margin-top: 5px;")
-  | dis be a partial yo 
-  = foo

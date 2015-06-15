@@ -1,8 +1,25 @@
 module.exports = function(grunt) {
+
+  grunt.loadNpmTasks('grunt-exec');
   grunt.loadNpmTasks('grunt-contrib-less');
   grunt.loadNpmTasks('grunt-contrib-watch');
 
   grunt.initConfig({
+
+    exec: {
+      lavender: {
+        cmd: function(){
+
+          var command     = "php vendor/lavender/src/Lavender/lavender-cli.php views $view $destination;"
+            , view        = "view=$(echo $file | sed -e 's/\\.lavender$//' | sed -e 's/^views\\///');"
+            , destination = "destination=$(echo $file | sed -e 's/lavender$/html/' | sed -e 's/^views\\///');"
+            , loop = "for file in `ls views/*.lavender`; do " + view + destination + command + "done"
+
+          return loop;
+        }
+      }
+    },
+
     less: {
       development: {
         options: {
@@ -12,15 +29,16 @@ module.exports = function(grunt) {
         },
         files: {
           // target.css file: source.less file
-          "public/css/main.css": "app/less/main.less",
+          'public/css/main.css': 'less/main.less',
 
         }
       }
     },
+
     watch: {
       styles: {
         files: [
-          'app/less/main.less',
+          'less/main.less',
         ],
         tasks: ['less'],
         options: {
@@ -30,6 +48,5 @@ module.exports = function(grunt) {
     }
   });
 
-  grunt.registerTask('default', ['less']);
+  grunt.registerTask('default', ['exec' ,'less']);
 };
-
