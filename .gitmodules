@@ -7,3 +7,6 @@
 [submodule "bootstrap"]
 	path = bootstrap
 	url = git@github.com:twbs/bootstrap.git
+[submodule "node_modules/bootstrap"]
+	path = node_modules/bootstrap
+	url = git@github.com:twbs/bootstrap.git
