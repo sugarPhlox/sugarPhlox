@@ -1,0 +1,525 @@
+extends layouts/default
+
+- global.javascript = global.javascript|default([])|push('styleguide')
+
+block content
+  .page-header
+    h1 Styleguide
+
+  //----COLORS 
+
+  div.page-header
+    h1 Colors
+  ul.swatches.clearfix
+    li @brand-primary
+    li @brand-secondary
+    li @brand-other
+    li @gray-base
+    li @brand-danger
+    li @brand-success
+    li @brand-warning
+    li @brand-info
+
+
+  //----STANDARD TEXT 
+
+  div.page-header
+    h1 Standard Text
+  p Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+      a(href='#') Maecenas 
+      | sed diam eget risus varius blandit sit amet non 
+      | magna. 
+      a(href='#') Lorem ipsum dolor sit 
+      | amet, consectetur adipiscing 
+      | elit. Praesent commodo cursus magna, vel scelerisque nisl 
+      | consectetur et. Cras mattis consectetur purus sit amet 
+      | fermentum. 
+      a(href='#') Duis mollis
+      | , est non commodo luctus, nisi erat 
+      | porttitor ligula, eget lacinia odio sem nec elit. Aenean 
+      | lacinia bibendum nulla sed consectetur.
+
+
+  //----HEADINGS
+
+  div.page-header
+    h1 Headings
+  h1 Heading 1
+  h2 Heading 2
+  h3 Heading 3
+  h4 Heading 4
+  h5 Heading 5
+  h6 Heading 6
+
+
+  //----UNORDERED LIST
+
+  div.page-header
+    h1 Unordered List
+  ul
+    li Unordered list 
+    li Unordered list 
+    li Unordered list 
+    li Unordered list 
+    li Unordered list 
+  
+
+  //----ORDERED LIST
+
+  div.page-header
+    h1 Ordered List
+  ol
+    li Ordered list
+    li Ordered list
+    li Ordered list
+    li Ordered list
+    li Ordered list
+  
+  
+  //----BUTTONS
+
+  div.page-header
+    h1 Buttons
+  p
+    button.btn.btn-lg.btn-default Default
+    button.btn.btn-lg.btn-primary Primary
+    button.btn.btn-lg.btn-success Success
+    button.btn.btn-lg.btn-info Info
+    button.btn.btn-lg.btn-warning Warning
+    button.btn.btn-lg.btn-danger Danger
+    button.btn.btn-lg.btn-link Link
+  p
+    button.btn.btn-default Default
+    button.btn.btn-primary Primary
+    button.btn.btn-success Success
+    button.btn.btn-info Info
+    button.btn.btn-warning Warning
+    button.btn.btn-danger Danger
+    button.btn.btn-link Link
+  p
+    button.btn.btn-sm.btn-default Default
+    button.btn.btn-sm.btn-primary Primary
+    button.btn.btn-sm.btn-success Success
+    button.btn.btn-sm.btn-info Info
+    button.btn.btn-sm.btn-warning Warning
+    button.btn.btn-sm.btn-danger Danger
+    button.btn.btn-sm.btn-link Link
+    
+
+  //----LABELS
+
+  div.page-header
+    h1 Labels
+  p.label-group
+    span.label.label-default Default
+    span.label.label-primary Primary
+    span.label.label-info    Info
+    span.label.label-success Success
+    span.label.label-warning Warning
+    span.label.label-danger Danger
+  p.label-group
+    span.label.label-lg.label-default Default
+    span.label.label-lg.label-primary Primary
+    span.label.label-lg.label-info    Info
+    span.label.label-lg.label-success Success
+    span.label.label-lg.label-warning Warning
+    span.label.label-lg.label-danger Danger
+
+    
+  //----PAGINATION
+  div.page-header
+    h1 Pagination
+  nav
+    ul.pagination
+      li.disabled
+        a(
+          href='#',
+          aria-label='Previous'
+        )
+          span(aria-hidden='true') &laquo;
+      li.active
+        a(href='#') 1
+      li
+        a(href='#') 2
+      li  
+        a(href='#') 3
+      li
+        a(href='#') 4
+      li
+        a(href='#') 5
+      li
+        a(href='#') 6
+      li
+        a(
+          href='#',
+          aria-label='Next'
+        )
+          span(aria-hidden='true') &raquo;
+
+  //----INPUTS
+
+  div.page-header
+    h1 Forms
+  form
+    div.form-group
+      label Monthly Rent
+      div.input-group 
+        span.input-group-addon $
+        input.form-control(
+          type='text',
+          placeholder='1400'
+        )
+    div.form-group
+      label Full Name
+      input.form-control(
+        type='text',
+        placeholder='John Doe'
+      )
+    div.form-group
+      label Fake Name
+      input.form-control(
+        type='text',
+        placeholder='John Doe',
+        disabled=true
+      )
+    div.form-group
+      div.checkbox
+        label
+          input(
+            type='checkbox',
+            value=''
+          ) 
+          | Cats
+        label
+          input(
+            type='checkbox',
+            value=''
+          )
+          | Dogs
+        label
+          input(
+            type='checkbox',
+            value='',
+            disabled=true
+          )
+          | Disabled
+    div.form-group
+      div.radio
+        label
+          input(
+            type='radio',
+            name='optionsRadios',
+            value='option1'
+          )
+          | Option 1
+        label
+          input(
+            type='radio',
+            name='optionsRadios',
+            value='option2'
+          )
+          | Option 2
+    div.form-group
+      select.form-control
+        option 1
+        option 2
+        option 3
+        option 4
+    div.form-group
+      label Unit Description
+      textarea.form-control(rows='6')
+
+    button.btn.btn-primary(type='submit') Save Changes
+
+
+
+
+  //----LIST GROUPS
+
+  div.page-header 
+    h1 List Groups
+  div.list-group
+    div.list-group-item
+      .row
+        .col-md-8 Some Seminar
+        .col-md-4
+          .pull-right
+            a.btn.btn-info(href="#") View
+            a.btn.btn-warning(
+              href="",
+              data-toggle="modal",
+              data-target="#"
+            ) Edit
+            a.btn.btn-danger(href="#") Delete
+    div.list-group-item.active
+      .row
+        .col-md-8 Some Seminar
+        .col-md-4
+          .pull-right
+            a.btn.btn-info(href="#") View
+            a.btn.btn-warning(
+              href="",
+              data-toggle="modal",
+              data-target="#"
+            ) Edit
+            a.btn.btn-danger(href="#") Delete
+    div.list-group-item
+      .row
+        .col-md-8 Some Seminar with a name so long 
+          | that it wraps to another line.
+        .col-md-4
+          .pull-right
+            a.btn.btn-info(href="#") View
+            a.btn.btn-warning(
+              href="",
+              data-toggle="modal",
+              data-target="#"
+            ) Edit
+            a.btn.btn-danger(href="#") Delete
+    div.list-group-item
+      .row
+        .col-md-8 Some Seminar
+        .col-md-4
+          .pull-right
+            a.btn.btn-info(href="#") View
+            a.btn.btn-warning(
+              href="",
+              data-toggle="modal",
+              data-target="#"
+            ) Edit
+            a.btn.btn-danger(href="#") Delete
+    div.list-group-item
+      .row
+        .col-md-8 Some Seminar
+        .col-md-4
+          .pull-right
+            a.btn.btn-info(href="#") View
+            a.btn.btn-warning(
+              href="",
+              data-toggle="modal",
+              data-target="#"
+            ) Edit
+            a.btn.btn-danger(href="#") Delete
+
+
+  //----PANELS
+
+  div.page-header
+    h1 Panels
+  div.panel.panel-default
+    div.panel-heading
+      h3.panel-title Default Panel
+    div.panel-body
+      | Spot something, big eyes, big eyes, crouch, shake butt, 
+      | prepare to pounce get video posted to internet for chasing 
+      | red dot and hunt anything that moves, yet chase imaginary 
+      | bugs, or why must they do that, but chase red laser dot or 
+      | leave fur on owners clothes. Peer out window, chatter at 
+      | birds, lure them to mouth chew foot, and always hungry, but 
+      | burrow under covers jump off balcony, onto stranger's head, 
+      | scamper knock over christmas tree. Eat grass, throw it back 
+      | up. Find empty spot in cupboard and sleep all day chase red 
+      | laser dot spit up on light gray carpet instead of adjacent 
+      | linoleum. Intently stare at the same spot sweet beast. Chase 
+      | red laser dot intently sniff hand. Pooping rainbow while 
+      | flying in a toasted bread costume in space. Pelt around the 
+      | house and up and down stairs chasing phantoms leave hair 
+      | everywhere, for chew iPad power cord, but lick arm hair 
+      | sleep on keyboard behind the couch, or put toy mouse in 
+      | food bowl run out of litter box at full speed .  
+  div.panel.panel-primary
+    div.panel-heading
+      h3.panel-title Primary Panel
+    div.panel-body
+      | Spot something, big eyes, big eyes, crouch, shake butt, 
+      | prepare to pounce get video posted to internet for chasing 
+      | red dot and hunt anything that moves, yet chase imaginary 
+      | bugs, or why must they do that, but chase red laser dot or 
+      | leave fur on owners clothes. Peer out window, chatter at 
+      | birds, lure them to mouth chew foot, and always hungry, but 
+      | burrow under covers jump off balcony, onto stranger's head, 
+      | scamper knock over christmas tree. Eat grass, throw it back 
+      | up. Find empty spot in cupboard and sleep all day chase red 
+      | laser dot spit up on light gray carpet instead of adjacent 
+      | linoleum. Intently stare at the same spot sweet beast. Chase 
+      | red laser dot intently sniff hand. Pooping rainbow while 
+      | flying in a toasted bread costume in space. Pelt around the 
+      | house and up and down stairs chasing phantoms leave hair 
+      | everywhere, for chew iPad power cord, but lick arm hair 
+      | sleep on keyboard behind the couch, or put toy mouse in 
+      | food bowl run out of litter box at full speed .  
+  div.panel.panel-info
+    div.panel-heading
+      h3.panel-title Info Panel
+    div.panel-body
+      | Spot something, big eyes, big eyes, crouch, shake butt, 
+      | prepare to pounce get video posted to internet for chasing 
+      | red dot and hunt anything that moves, yet chase imaginary 
+      | bugs, or why must they do that, but chase red laser dot or 
+      | leave fur on owners clothes. Peer out window, chatter at 
+      | birds, lure them to mouth chew foot, and always hungry, but 
+      | burrow under covers jump off balcony, onto stranger's head, 
+      | scamper knock over christmas tree. Eat grass, throw it back 
+      | up. Find empty spot in cupboard and sleep all day chase red 
+      | laser dot spit up on light gray carpet instead of adjacent 
+      | linoleum. Intently stare at the same spot sweet beast. Chase 
+      | red laser dot intently sniff hand. Pooping rainbow while 
+      | flying in a toasted bread costume in space. Pelt around the 
+      | house and up and down stairs chasing phantoms leave hair 
+      | everywhere, for chew iPad power cord, but lick arm hair 
+      | sleep on keyboard behind the couch, or put toy mouse in 
+      | food bowl run out of litter box at full speed .  
+  div.panel.panel-success
+    div.panel-heading
+      h3.panel-title Success Panel
+    div.panel-body
+      | Spot something, big eyes, big eyes, crouch, shake butt, 
+      | prepare to pounce get video posted to internet for chasing 
+      | red dot and hunt anything that moves, yet chase imaginary 
+      | bugs, or why must they do that, but chase red laser dot or 
+      | leave fur on owners clothes. Peer out window, chatter at 
+      | birds, lure them to mouth chew foot, and always hungry, but 
+      | burrow under covers jump off balcony, onto stranger's head, 
+      | scamper knock over christmas tree. Eat grass, throw it back 
+      | up. Find empty spot in cupboard and sleep all day chase red 
+      | laser dot spit up on light gray carpet instead of adjacent 
+      | linoleum. Intently stare at the same spot sweet beast. Chase 
+      | red laser dot intently sniff hand. Pooping rainbow while 
+      | flying in a toasted bread costume in space. Pelt around the 
+      | house and up and down stairs chasing phantoms leave hair 
+      | everywhere, for chew iPad power cord, but lick arm hair 
+      | sleep on keyboard behind the couch, or put toy mouse in 
+      | food bowl run out of litter box at full speed .  
+  div.panel.panel-warning
+    div.panel-heading
+      h3.panel-title Warning Panel
+    div.panel-body
+      | Spot something, big eyes, big eyes, crouch, shake butt, 
+      | prepare to pounce get video posted to internet for chasing 
+      | red dot and hunt anything that moves, yet chase imaginary 
+      | bugs, or why must they do that, but chase red laser dot or 
+      | leave fur on owners clothes. Peer out window, chatter at 
+      | birds, lure them to mouth chew foot, and always hungry, but 
+      | burrow under covers jump off balcony, onto stranger's head, 
+      | scamper knock over christmas tree. Eat grass, throw it back 
+      | up. Find empty spot in cupboard and sleep all day chase red 
+      | laser dot spit up on light gray carpet instead of adjacent 
+      | linoleum. Intently stare at the same spot sweet beast. Chase 
+      | red laser dot intently sniff hand. Pooping rainbow while 
+      | flying in a toasted bread costume in space. Pelt around the 
+      | house and up and down stairs chasing phantoms leave hair 
+      | everywhere, for chew iPad power cord, but lick arm hair 
+      | sleep on keyboard behind the couch, or put toy mouse in 
+      | food bowl run out of litter box at full speed .  
+  div.panel.panel-danger
+    div.panel-heading
+      h3.panel-title Danger Panel
+    div.panel-body
+      | Spot something, big eyes, big eyes, crouch, shake butt, 
+      | prepare to pounce get video posted to internet for chasing 
+      | red dot and hunt anything that moves, yet chase imaginary 
+      | bugs, or why must they do that, but chase red laser dot or 
+      | leave fur on owners clothes. Peer out window, chatter at 
+      | birds, lure them to mouth chew foot, and always hungry, but 
+      | burrow under covers jump off balcony, onto stranger's head, 
+      | scamper knock over christmas tree. Eat grass, throw it back 
+      | up. Find empty spot in cupboard and sleep all day chase red 
+      | laser dot spit up on light gray carpet instead of adjacent 
+      | linoleum. Intently stare at the same spot sweet beast. Chase 
+      | red laser dot intently sniff hand. Pooping rainbow while 
+      | flying in a toasted bread costume in space. Pelt around the 
+      | house and up and down stairs chasing phantoms leave hair 
+      | everywhere, for chew iPad power cord, but lick arm hair 
+      | sleep on keyboard behind the couch, or put toy mouse in 
+      | food bowl run out of litter box at full speed .  
+
+  //----WELLS
+
+  div.page-header
+    h1 Wells
+  div.well
+      | Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+      | Maecenas sed diam eget risus varius blandit sit amet non 
+      | magna. Lorem ipsum dolor sit amet, consectetur adipiscing 
+      | elit. Praesent commodo cursus magna, vel scelerisque nisl 
+      | consectetur et. Cras mattis consectetur purus sit amet 
+      | fermentum. Duis mollis, est non commodo luctus, nisi erat 
+      | porttitor ligula, eget lacinia odio sem nec elit. Aenean 
+      | lacinia bibendum nulla sed consectetur.
+
+  //----ALERTS
+
+  div.page-header
+    h1 Alerts
+  div.alert.alert-dismissable.alert-success.hidden
+    button.close(
+      type='button',
+      data-dismiss='alert',
+      aria-label='close'
+    )
+      span(aria-hidden='true') &times;
+    span.fa.fa-check
+    | What you have done has been successful. Congrats.
+  div.alert.alert-dismissable.alert-info.hidden
+    button.close(
+      type='button',
+      data-dismiss='alert',
+      aria-label='close'
+    )
+      span(aria-hidden='true') &times;
+    span.fa.fa-star
+    | This is an informative alert. Enjoy.
+  div.alert.alert-dismissable.alert-warning.hidden
+    button.close(
+      type='button',
+      data-dismiss='alert',
+      aria-label='close'
+    )
+      span(aria-hidden='true') &times;
+    span.fa.fa-warning-sign
+    | Be careful! You're about to blow it.
+  div.alert.alert-dismissable.alert-danger.hidden
+    button.close(
+      type='button',
+      data-dismiss='alert',
+      aria-label='close'
+    )
+      span(aria-hidden='true') &times;
+    span.fa.fa-warning-sign
+    | OK. Seriously. This is getting dangerous.
+  a.btn.btn-success.demo-alert(
+    href='#',
+    data-alert-state='success'
+  ) Show Success Alert
+  a.btn.btn-info.demo-alert(
+    href='#',
+    data-alert-state='info'
+  ) Show Info Alert
+  a.btn.btn-warning.demo-alert(
+    href='#',
+    data-alert-state='warning'
+  ) Show Warning Alert
+  a.btn.btn-danger.demo-alert(
+    href='#',
+    data-alert-state='danger'
+  ) Show Danger Alert
+  a.btn.btn-link.demo-alert-clear(href='#') Clear Alerts
+
+
+  //----THUMBNAILS
+
+  div.page-header
+    h1 Thumbnails
+  img(
+    src='http://placehold.it/120x120',
+    alt='120x120'
+  )
+
+  //----LARGE PHOTO
+
+  div.page-header
+    h1 Large Photo (4:3)
+  img.img-responsive(
+    src='http://placehold.it/787x590',
+    alt='787x590'
+  )
