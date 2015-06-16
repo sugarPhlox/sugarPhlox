@@ -1,9 +1,6 @@
-[submodule "lavender"]
-	path = lavender
+[submodule "node_modules/lavender"]
+	path = node_modules/lavender
 	url = git@github.com:golavender/lavender.git
-[submodule "composer"]
-	path = composer
-	url = git@github.com:composer/composer.git
-[submodule "vendor/vagrantfile"]
-	path = vendor/vagrantfile
-	url = https://github.com/daftlabs/vagrantfile.git
+[submodule "node_modules/Font-Awesome"]
+	path = node_modules/Font-Awesome
+	url = git@github.com:FortAwesome/Font-Awesome.git
