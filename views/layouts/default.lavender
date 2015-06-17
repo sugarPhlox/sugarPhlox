@@ -7,5 +7,6 @@ html
     link(rel='stylesheet', href='css/main.css')
 
 
-body
-  block content
+.container
+  body
+    block content
