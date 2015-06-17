@@ -1,9 +1,6 @@
 [submodule "node_modules/lavender"]
 	path = node_modules/lavender
 	url = git@github.com:golavender/lavender.git
-[submodule "node_modules/Font-Awesome"]
-	path = node_modules/Font-Awesome
-	url = git@github.com:FortAwesome/Font-Awesome.git
 [submodule "node_modules/bootstrap"]
 	path = node_modules/bootstrap
 	url = git@github.com:twbs/bootstrap.git
