@@ -1,6 +1,6 @@
 [submodule "node_modules/lavender"]
 	path = node_modules/lavender
-	url = git@github.com:golavender/lavender.git
+	url = https://github.com/golavender/lavender.git
 [submodule "node_modules/bootstrap"]
 	path = node_modules/bootstrap
-	url = git@github.com:twbs/bootstrap.git
+	url = https://github.com/twbs/bootstrap.git
