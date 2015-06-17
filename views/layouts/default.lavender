@@ -4,6 +4,7 @@ html
   head
     title
       block title
+    link(rel='stylesheet', href='public/css/main.css')
 
 
 body
