@@ -1,9 +1,0 @@
-extends layouts/default
-
-block title
-  | sugarPhlox
-
-block content
-  .well.text-center
-    h1 Under Construction
-    | Sorry about the mess! This website will be available soon.

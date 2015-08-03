@@ -1,24 +1,25 @@
 module.exports = function(grunt) {
-
-  grunt.loadNpmTasks('grunt-exec');
+  grunt.loadNpmTasks('grunt-contrib-jade');
   grunt.loadNpmTasks('grunt-contrib-less');
   grunt.loadNpmTasks('grunt-contrib-watch');
+  grunt.loadNpmTasks('grunt-contrib-connect');
 
   grunt.initConfig({
-
-    exec: {
-      lavender: {
-        cmd: function(){
-
-          var command     = "php node_modules/lavender/src/Lavender/lavender-cli.php views $view $destination;"
-            , view        = "view=$(echo $file | sed -e 's/\\.lavender$//' | sed -e 's/^views\\///');"
-            , destination = "destination=$(echo $file | sed -e 's/lavender$/html/' | sed -e 's/^views/public/');"
-            , loop = "for file in `ls views/*.lavender`; do " + view + destination + command + "done"
-
-          return loop;
-        }
+    jade: {
+      compile: {
+        options: {
+          client: false,
+          pretty: true
+        },
+        files: [ {
+          cwd: 'assets/views',
+          src: '**/*.jade',
+          dest: 'public',
+          expand: true,
+          ext: '.html'
+        } ]
       }
-    },
+    },    
 
     less: {
       development: {
@@ -29,7 +30,7 @@ module.exports = function(grunt) {
         },
         files: {
           // target.css file: source.less file
-          'public/css/main.css': 'less/main.less',
+          'public/css/main.css': 'assets/less/main.less',
 
         }
       }
@@ -39,14 +40,26 @@ module.exports = function(grunt) {
       styles: {
         files: [
           'less/main.less',
+          '**/*.jade'
         ],
-        tasks: ['less'],
+        tasks: ['less','jade'],
         options: {
           nospawn: true
+        }
+      }
+    },
+
+    connect: {
+      server: {
+        options: {
+          base: 'public',
+          port: 9800,
+          useAvailablePort: true
         }
       }
     }
   });
 
-  grunt.registerTask('default', ['exec' ,'less']);
+  grunt.registerTask('default', ['jade','less']);
+  grunt.registerTask('serve', ['jade','less','connect:server','watch']);
 };
