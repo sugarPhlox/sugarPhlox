@@ -9,6 +9,7 @@ header {
   background: -ms-linear-gradient(top, @brand-primary, @brand-info);
   background: -o-linear-gradient(top, @brand-primary, @brand-info);
   padding: @padding-large-vertical * 10 0;
+  text-align: center;
 }
 
 @media (min-width: @screen-sm) {
@@ -31,10 +32,8 @@ header {
 
   @media (max-width: @screen-sm) {
     padding: @padding-large-vertical * 3 @padding-large-vertical;
+    text-align: center;
 
-    h1 {
-      text-align: center;
-    }
   }
 }
 
@@ -52,18 +51,91 @@ header {
 }
 
 .social-media {
+  text-align: center;
+  line-height: 2;
+
   .twitter {
-    background-color: @brand-primary;
-    background: -webkit-gradient(linear, left top, right bottom, from(@brand-primary), to(@brand-info));
-    background: -webkit-linear-gradient(top, @brand-primary, @brand-info);
-    background: -moz-linear-gradient(top, @brand-primary, @brand-info);
-    background: -ms-linear-gradient(top, @brand-primary, @brand-info);
-    background: -o-linear-gradient(top, @brand-primary, @brand-info);
-    padding: @padding-large-vertical * 10 0;
+    background-color: @brand-info;
+    background: -webkit-gradient(linear, left top, right bottom, from(darken(@brand-info, 20%)), to(@brand-info));
+    background: -webkit-linear-gradient(top, darken(@brand-info, 20%), @brand-info);
+    background: -moz-linear-gradient(top, darken(@brand-info, 20%), @brand-info);
+    background: -ms-linear-gradient(top, darken(@brand-info, 20%), @brand-info);
+    background: -o-linear-gradient(top, darken(@brand-info, 20%), @brand-info);
+    padding: @padding-large-vertical * 8 0;
+  
+    .fa-stack-1x {
+      color: @brand-info;
+    }
   }
 
-  .fa-stack-1x {
-    color: @brand-primary;
+  .instagram {
+    background-color: @gray;
+    background: -webkit-gradient(linear, left top, right bottom, from(darken(@gray, 20%)), to(@gray));
+    background: -webkit-linear-gradient(top, darken(@gray, 20%), @gray);
+    background: -moz-linear-gradient(top, darken(@gray, 20%), @gray);
+    background: -ms-linear-gradient(top, darken(@gray, 20%), @gray);
+    background: -o-linear-gradient(top, darken(@gray, 20%), @gray);
+    padding: @padding-large-vertical * 8 0;
+
+    .fa-stack-1x {
+      color: @gray;
+    }
+  }
+
+  .linkedin {
+    background-color: @brand-success;
+    background: -webkit-gradient(linear, left top, right bottom, from(darken(@brand-success, 20%)), to(@brand-success));
+    background: -webkit-linear-gradient(top, darken(@brand-success, 20%), @brand-success);
+    background: -moz-linear-gradient(top, darken(@brand-success, 20%), @brand-success);
+    background: -ms-linear-gradient(top, darken(@brand-success, 20%), @brand-success);
+    background: -o-linear-gradient(top, darken(@brand-success, 20%), @brand-success);
+    padding: @padding-large-vertical * 8 0;
+
+    .fa-stack-1x {
+      color: @brand-success;
+    }
+  }
+
+  .youtube {
+    background-color: @brand-danger;
+    background: -webkit-gradient(linear, left top, right bottom, from(darken(@brand-danger, 20%)), to(@brand-danger));
+    background: -webkit-linear-gradient(top, darken(@brand-danger, 20%), @brand-danger);
+    background: -moz-linear-gradient(top, darken(@brand-danger, 20%), @brand-danger);
+    background: -ms-linear-gradient(top, darken(@brand-danger, 20%), @brand-danger);
+    background: -o-linear-gradient(top, darken(@brand-danger, 20%), @brand-danger);
+    padding: @padding-large-vertical * 8 0;
+
+    .fa-stack-1x {
+      color: @brand-danger;
+    }
+  }
+
+  .pinterest {
+    background-color: @brand-warning;
+    background: -webkit-gradient(linear, left top, right bottom, from(darken(@brand-warning, 20%)), to(@brand-warning));
+    background: -webkit-linear-gradient(top, darken(@brand-warning, 20%), @brand-warning);
+    background: -moz-linear-gradient(top, darken(@brand-warning, 20%), @brand-warning);
+    background: -ms-linear-gradient(top, darken(@brand-warning, 20%), @brand-warning);
+    background: -o-linear-gradient(top, darken(@brand-warning, 20%), @brand-warning);
+    padding: @padding-large-vertical * 8 0;
+
+    .fa-stack-1x {
+      color: @brand-warning;
+    }
+  }
+
+  .twitch {
+    background-color: @panel-default-heading-bg;
+    background: -webkit-gradient(linear, left top, right bottom, from(darken(@panel-default-heading-bg, 20%)), to(@panel-default-heading-bg));
+    background: -webkit-linear-gradient(top, darken(@panel-default-heading-bg, 20%), @panel-default-heading-bg);
+    background: -moz-linear-gradient(top, darken(@panel-default-heading-bg, 20%), @panel-default-heading-bg);
+    background: -ms-linear-gradient(top, darken(@panel-default-heading-bg, 20%), @panel-default-heading-bg);
+    background: -o-linear-gradient(top, darken(@panel-default-heading-bg, 20%), @panel-default-heading-bg);
+    padding: @padding-large-vertical * 8 0;
+
+    .fa-stack-1x {
+      color: @panel-default-heading-bg;
+    }
   }
 }
 
