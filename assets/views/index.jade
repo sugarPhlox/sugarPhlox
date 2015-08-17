@@ -4,5 +4,111 @@ extends layouts/default
 
 block content
 
-  .col-sm-12.text-center 
-    img(src='public/img/sugarPhlox.png')
+  header
+    .row.it-begins
+      .container-fluid.text-center
+        img.img-responsive(src='public/img/sugarPhlox.png')
+
+  .row.hey-hey-know-me
+    .container-fluid
+      .col-xs-12.col-sm-5
+        img.img-circle(
+          src='public/img/itsame-mario.png'
+        )
+      .col-xs-12.col-sm-7
+        h1 About Me
+        p
+          | Born in Massachusetts, I grew up surrounded with love and support by my family to
+          | pursue anything I enjoyed in the world, and took full advantage of that. In high school
+          | I enjoyed finer arts and photography, and took that with me to Salem State University
+          | (based in Salem, MA), where I received my degree in Graphic Design (after starting as
+          | a Biology major... really).
+        p
+          | In summer 2013, I looked at my cat Buddy and said "We're moving to Burlington, VT", and
+          | a month later I moved, and soon after started learning front end development, which 
+          | has brought me here today.
+        p
+          | Other than my love for various forms of art, I do enjoy a good life in VT. My passions
+          | include my vehicles (a 2009 Subaru WRX and a motorcycle), good cooking, my fantastic cat,
+          | and learning something new every day.
+  .row.portfolio
+    .container-fluid
+      .col-xs-12.text-center
+        h1 Portfolio
+        .col-sm-6.col-sm-offset-3
+          p
+            | My work has a wide range covering different interests and fields. This includes
+            | graphic design, front end development, photography, print making, and more.
+      .col-xs-12.col-sm-3
+        img.img-responsive(src='http://lorempixel.com/g/400/400/')
+      .col-xs-12.col-sm-3
+        img.img-responsive(src='http://lorempixel.com/g/400/400/')
+      .col-xs-12.col-sm-3
+        img.img-responsive(src='http://lorempixel.com/g/400/400/')
+      .col-xs-12.col-sm-3
+        img.img-responsive(src='http://lorempixel.com/g/400/400/')
+      .col-xs-12.col-sm-3
+        img.img-responsive(src='http://lorempixel.com/g/400/400/')
+      .col-xs-12.col-sm-3
+        img.img-responsive(src='http://lorempixel.com/g/400/400/')
+      .col-xs-12.col-sm-3
+        img.img-responsive(src='http://lorempixel.com/g/400/400/')
+      .col-xs-12.col-sm-3
+        img.img-responsive(src='http://lorempixel.com/g/400/400/')
+  .row.social-media
+    .container-fluid
+      .col-xs-12
+        h1 Social Media
+        p
+          | You really want to learn about me? Scope out some of my other work on YouTube,
+          | or check out my photography on Instagram. The internet is a beautiful thing.
+      .col-xs-6.col-sm-2.text-center.twitter
+        .fa-stack.fa-4x
+          i.fa.fa-circle.fa-stack-2x
+          i.fa.fa-twitter.fa-stack-1x
+      .col-xs-6.col-sm-2.instagram
+        blockquote.instagram-media(data-instgrm-version='4', style=' background:#FFF; border:0; border-radius:3px; box-shadow:0 0 1px 0 rgba(0,0,0,0.5),0 1px 10px 0 rgba(0,0,0,0.15); margin: 1px; max-width:658px; padding:0; width:99.375%; width:-webkit-calc(100% - 2px); width:calc(100% - 2px);')
+            div(style='padding:8px;')
+                div(style=' background:#F8F8F8; line-height:0; margin-top:40px; padding:50% 0; text-align:center; width:100%;')
+                  div(style=' background:url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACwAAAAsCAMAAAApWqozAAAAGFBMVEUiIiI9PT0eHh4gIB4hIBkcHBwcHBwcHBydr+JQAAAACHRSTlMABA4YHyQsM5jtaMwAAADfSURBVDjL7ZVBEgMhCAQBAf//42xcNbpAqakcM0ftUmFAAIBE81IqBJdS3lS6zs3bIpB9WED3YYXFPmHRfT8sgyrCP1x8uEUxLMzNWElFOYCV6mHWWwMzdPEKHlhLw7NWJqkHc4uIZphavDzA2JPzUDsBZziNae2S6owH8xPmX8G7zzgKEOPUoYHvGz1TBCxMkd3kwNVbU0gKHkx+iZILf77IofhrY1nYFnB/lQPb79drWOyJVa/DAvg9B/rLB4cC+Nqgdz/TvBbBnr6GBReqn/nRmDgaQEej7WhonozjF+Y2I/fZou/qAAAAAElFTkSuQmCC); display:block; height:44px; margin:0 auto -44px; position:relative; top:-22px; width:44px;')
+                p(style=' color:#c9c8cd; font-family:Arial,sans-serif; font-size:14px; line-height:17px; margin-bottom:0; margin-top:8px; overflow:hidden; padding:8px 0 7px; text-align:center; text-overflow:ellipsis; white-space:nowrap;')
+                  a(href='https://instagram.com/p/5o4JHoCHAo/', style=' color:#c9c8cd; font-family:Arial,sans-serif; font-size:14px; font-style:normal; font-weight:normal; line-height:17px; text-decoration:none;', target='_top') A photo posted by Carabou (@sugarphlox)
+                  |  on 
+                  time(style=' font-family:Arial,sans-serif; font-size:14px; line-height:17px;', datetime='2015-07-27T11:56:41+00:00') Jul 27, 2015 at 4:56am PDT
+            script(async='', defer='', src='//platform.instagram.com/en_US/embeds.js')
+      .col-xs-6.col-sm-2.linkedin
+        .fa-stack.fa-4x
+          i.fa.fa-circle.fa-stack-2x
+          i.fa.fa-linkedin.fa-stack-1x
+      .col-xs-6.col-sm-2.pinterest
+        .fa-stack.fa-4x
+          i.fa.fa-circle.fa-stack-2x
+          i.fa.fa-pinterest.fa-stack-1x
+      .col-xs-6.col-sm-2.youtube
+        .fa-stack.fa-4x
+          i.fa.fa-circle.fa-stack-2x
+          i.fa.fa-youtube.fa-stack-1x
+      .col-xs-6.col-sm-2.twitch
+        .fa-stack.fa-4x
+          i.fa.fa-circle.fa-stack-2x
+          i.fa.fa-twitch.fa-stack-1x
+  .row.you-should-talk-to-me
+    .container-fluid
+      .col-xs-12.col-sm-6.col-sm-offset-6
+        .well
+          h1 Contact Me
+          p
+            | Sit in box sleep in the bathroom sink yet meow. Curl into a furry donut loves.
+          form
+            fieldset
+              .form-group
+                label(for='InputName') Name
+                input#InputName.form-control(type='text', placeholder='Name')
+              .form-group
+                label(for='InputEmail') Email Address
+                input#InputEmail.form-control(type='text', placeholder='Email')
+              button.btn.btn-default(type='submit') Submit
+
+
+
+

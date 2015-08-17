@@ -1,0 +1,77 @@
+header {
+  position: relative;
+  width: 100%;
+  min-height: auto;
+  background-color: @brand-primary;
+  background: -webkit-gradient(linear, left top, right bottom, from(@brand-primary), to(@brand-info));
+  background: -webkit-linear-gradient(top, @brand-primary, @brand-info);
+  background: -moz-linear-gradient(top, @brand-primary, @brand-info);
+  background: -ms-linear-gradient(top, @brand-primary, @brand-info);
+  background: -o-linear-gradient(top, @brand-primary, @brand-info);
+  padding: @padding-large-vertical * 10 0;
+}
+
+@media (min-width: @screen-sm) {
+  header {
+    min-height: 100%;
+  }
+}
+
+.hey-hey-know-me {
+  padding: @padding-large-vertical * 4;
+  background-color: @white;
+  color: @body-bg;
+  line-height: 2;
+  text-align: justify;
+
+  img {
+    margin-top: @padding-large-vertical * 3;
+    text-align: center;
+  }
+
+  @media (max-width: @screen-sm) {
+    padding: @padding-large-vertical * 3 @padding-large-vertical;
+
+    h1 {
+      text-align: center;
+    }
+  }
+}
+
+.portfolio, .social-media {
+  .container-fluid, .col-xs-12.col-sm-3 {
+    padding: 0;
+  }
+}
+
+.portfolio {
+  .col-xs-12.text-center {
+    padding: @padding-large-vertical * 6;
+    line-height: 2;
+  }
+}
+
+.social-media {
+  .twitter {
+    background-color: @brand-primary;
+    background: -webkit-gradient(linear, left top, right bottom, from(@brand-primary), to(@brand-info));
+    background: -webkit-linear-gradient(top, @brand-primary, @brand-info);
+    background: -moz-linear-gradient(top, @brand-primary, @brand-info);
+    background: -ms-linear-gradient(top, @brand-primary, @brand-info);
+    background: -o-linear-gradient(top, @brand-primary, @brand-info);
+    padding: @padding-large-vertical * 10 0;
+  }
+
+  .fa-stack-1x {
+    color: @brand-primary;
+  }
+}
+
+.you-should-talk-to-me {
+  background: url('../img/wrx-contactme.png') no-repeat fixed center center;
+  background-size: cover;
+  min-height: 500px;
+  padding-top: @padding-large-vertical * 10;
+}
+
+
