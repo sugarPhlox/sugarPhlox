@@ -22,7 +22,7 @@ block content
           | (based in Salem, MA), where I received my degree in Graphic Design (after starting as
           | a Biology major... really).
         p
-          | In summer 2013, I looked at my cat Buddy and said "We're moving to Burlington, VT", and
+          | In summer 2013, I looked at my cat Buddy and said 'We're moving to Burlington, VT', and
           | a month later I moved, and soon after started learning front end development, which 
           | has brought me here today.
         p
@@ -60,28 +60,22 @@ block content
         p
           | You really want to learn about me? Scope out some of my other work on YouTube,
           | or check out my photography on Instagram. The internet is a beautiful thing.
-      .col-xs-6.col-sm-2.text-center.twitter
+      .col-xs-6.col-sm-2.twitter
         .fa-stack.fa-4x
           i.fa.fa-circle.fa-stack-2x
           i.fa.fa-twitter.fa-stack-1x
       .col-xs-6.col-sm-2.instagram
-        blockquote.instagram-media(data-instgrm-version='4', style=' background:#FFF; border:0; border-radius:3px; box-shadow:0 0 1px 0 rgba(0,0,0,0.5),0 1px 10px 0 rgba(0,0,0,0.15); margin: 1px; max-width:658px; padding:0; width:99.375%; width:-webkit-calc(100% - 2px); width:calc(100% - 2px);')
-            div(style='padding:8px;')
-                div(style=' background:#F8F8F8; line-height:0; margin-top:40px; padding:50% 0; text-align:center; width:100%;')
-                  div(style=' background:url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACwAAAAsCAMAAAApWqozAAAAGFBMVEUiIiI9PT0eHh4gIB4hIBkcHBwcHBwcHBydr+JQAAAACHRSTlMABA4YHyQsM5jtaMwAAADfSURBVDjL7ZVBEgMhCAQBAf//42xcNbpAqakcM0ftUmFAAIBE81IqBJdS3lS6zs3bIpB9WED3YYXFPmHRfT8sgyrCP1x8uEUxLMzNWElFOYCV6mHWWwMzdPEKHlhLw7NWJqkHc4uIZphavDzA2JPzUDsBZziNae2S6owH8xPmX8G7zzgKEOPUoYHvGz1TBCxMkd3kwNVbU0gKHkx+iZILf77IofhrY1nYFnB/lQPb79drWOyJVa/DAvg9B/rLB4cC+Nqgdz/TvBbBnr6GBReqn/nRmDgaQEej7WhonozjF+Y2I/fZou/qAAAAAElFTkSuQmCC); display:block; height:44px; margin:0 auto -44px; position:relative; top:-22px; width:44px;')
-                p(style=' color:#c9c8cd; font-family:Arial,sans-serif; font-size:14px; line-height:17px; margin-bottom:0; margin-top:8px; overflow:hidden; padding:8px 0 7px; text-align:center; text-overflow:ellipsis; white-space:nowrap;')
-                  a(href='https://instagram.com/p/5o4JHoCHAo/', style=' color:#c9c8cd; font-family:Arial,sans-serif; font-size:14px; font-style:normal; font-weight:normal; line-height:17px; text-decoration:none;', target='_top') A photo posted by Carabou (@sugarphlox)
-                  |  on 
-                  time(style=' font-family:Arial,sans-serif; font-size:14px; line-height:17px;', datetime='2015-07-27T11:56:41+00:00') Jul 27, 2015 at 4:56am PDT
-            script(async='', defer='', src='//platform.instagram.com/en_US/embeds.js')
+        .fa-stack.fa-4x
+          i.fa.fa-circle.fa-stack-2x
+          i.fa.fa-instagram.fa-stack-1x
       .col-xs-6.col-sm-2.linkedin
         .fa-stack.fa-4x
           i.fa.fa-circle.fa-stack-2x
           i.fa.fa-linkedin.fa-stack-1x
-      .col-xs-6.col-sm-2.pinterest
+      .col-xs-6.col-sm-2.behance
         .fa-stack.fa-4x
           i.fa.fa-circle.fa-stack-2x
-          i.fa.fa-pinterest.fa-stack-1x
+          i.fa.fa-behance.fa-stack-1x
       .col-xs-6.col-sm-2.youtube
         .fa-stack.fa-4x
           i.fa.fa-circle.fa-stack-2x
@@ -96,17 +90,22 @@ block content
         .well
           h1 Contact Me
           p
-            | Sit in box sleep in the bathroom sink yet meow. Curl into a furry donut loves.
-          form
-            fieldset
-              .form-group
-                label(for='InputName') Name
-                input#InputName.form-control(type='text', placeholder='Name')
-              .form-group
-                label(for='InputEmail') Email Address
-                input#InputEmail.form-control(type='text', placeholder='Email')
-              button.btn.btn-default(type='submit') Submit
-
-
-
-
+            | Feel free to contact me about job opportunities, questions about my work, or even to say hi. I'll be here.
+          form.form-horizontal(role='form', method='post', target='_blank', action='//formspree.io/sugarPhlox@gmail.com')
+            .form-group
+              label.col-sm-2.control-label(for='name') Name
+              .col-sm-10
+                input#name.form-control(required='', type='text', name='name', placeholder='First & Last Name')
+            .form-group
+              label.col-sm-2.control-label(for='email') Email
+              .col-sm-10
+                input#email.form-control(required='', type='email', name='_replyto', placeholder='your email, please')
+            .form-group
+              label.col-sm-2.control-label(for='message') Message
+              .col-sm-10
+                textarea.form-control(required='', rows='4', name='message')
+            .form-group
+              .col-sm-10.col-sm-offset-2
+                input#submit.btn.btn-primary(name='submit', type='submit', value='send')
+                input(type='text', name='_gotcha', style='display:none')
+                input(type='hidden', name='_next', value='//site.io/thanks.html')

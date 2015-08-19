@@ -53,9 +53,16 @@ header {
 .social-media {
   text-align: center;
   line-height: 2;
+  background-color: @white;
+  color: @body-bg;
+
+  .col-xs-12 {
+    padding: @padding-large-vertical * 4;
+  }
 
   .twitter {
     background-color: @brand-info;
+    color: @white;
     background: -webkit-gradient(linear, left top, right bottom, from(darken(@brand-info, 20%)), to(@brand-info));
     background: -webkit-linear-gradient(top, darken(@brand-info, 20%), @brand-info);
     background: -moz-linear-gradient(top, darken(@brand-info, 20%), @brand-info);
@@ -70,6 +77,7 @@ header {
 
   .instagram {
     background-color: @gray;
+    color: @white;
     background: -webkit-gradient(linear, left top, right bottom, from(darken(@gray, 20%)), to(@gray));
     background: -webkit-linear-gradient(top, darken(@gray, 20%), @gray);
     background: -moz-linear-gradient(top, darken(@gray, 20%), @gray);
@@ -84,6 +92,7 @@ header {
 
   .linkedin {
     background-color: @brand-success;
+    color: @white;
     background: -webkit-gradient(linear, left top, right bottom, from(darken(@brand-success, 20%)), to(@brand-success));
     background: -webkit-linear-gradient(top, darken(@brand-success, 20%), @brand-success);
     background: -moz-linear-gradient(top, darken(@brand-success, 20%), @brand-success);
@@ -98,6 +107,7 @@ header {
 
   .youtube {
     background-color: @brand-danger;
+    color: @white;
     background: -webkit-gradient(linear, left top, right bottom, from(darken(@brand-danger, 20%)), to(@brand-danger));
     background: -webkit-linear-gradient(top, darken(@brand-danger, 20%), @brand-danger);
     background: -moz-linear-gradient(top, darken(@brand-danger, 20%), @brand-danger);
@@ -110,8 +120,9 @@ header {
     }
   }
 
-  .pinterest {
+  .behance {
     background-color: @brand-warning;
+    color: @white;
     background: -webkit-gradient(linear, left top, right bottom, from(darken(@brand-warning, 20%)), to(@brand-warning));
     background: -webkit-linear-gradient(top, darken(@brand-warning, 20%), @brand-warning);
     background: -moz-linear-gradient(top, darken(@brand-warning, 20%), @brand-warning);
@@ -126,6 +137,7 @@ header {
 
   .twitch {
     background-color: @panel-default-heading-bg;
+    color: @white;
     background: -webkit-gradient(linear, left top, right bottom, from(darken(@panel-default-heading-bg, 20%)), to(@panel-default-heading-bg));
     background: -webkit-linear-gradient(top, darken(@panel-default-heading-bg, 20%), @panel-default-heading-bg);
     background: -moz-linear-gradient(top, darken(@panel-default-heading-bg, 20%), @panel-default-heading-bg);
