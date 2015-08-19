@@ -7,7 +7,7 @@ block content
   header
     img(src='public/img/sugarPhlox.png')
 
-  .row.hey-hey-know-me#hey-hey-know-me
+  .row.hey-hey-know-me#about
     .container-fluid
       .col-xs-12.col-sm-5
         img.img-circle(
@@ -29,7 +29,7 @@ block content
           | Other than my love for various forms of art, I do enjoy a good life in VT. My passions
           | include my vehicles (a 2009 Subaru WRX and a motorcycle), good cooking, my fantastic cat,
           | and learning something new every day.
-  .row.portfolio
+  .row.portfolio#portfolio
     .container-fluid
       .col-xs-12.text-center
         h1 Portfolio
@@ -53,7 +53,7 @@ block content
         img.img-responsive(src='http://lorempixel.com/g/400/400/')
       .col-xs-12.col-sm-3
         img.img-responsive(src='http://lorempixel.com/g/400/400/')
-  .row.social-media
+  .row.social-media#social-media
     .container-fluid
       .col-xs-12
         h1 Social Media
@@ -61,36 +61,43 @@ block content
           | You really want to learn about me? Scope out some of my other work on YouTube,
           | or check out my photography on Instagram. The internet is a beautiful thing.
       .col-xs-6.col-sm-2.twitter
-        .fa-stack.fa-4x
-          i.fa.fa-circle.fa-stack-2x
-          i.fa.fa-twitter.fa-stack-1x
+        a(href='https://twitter.com/sugarPhlox', target='_blank')
+          .fa-stack.fa-4x
+            i.fa.fa-circle.fa-stack-2x
+            i.fa.fa-twitter.fa-stack-1x
       .col-xs-6.col-sm-2.instagram
-        .fa-stack.fa-4x
-          i.fa.fa-circle.fa-stack-2x
-          i.fa.fa-instagram.fa-stack-1x
+        a(href='http://instagram.com/sugarphlox', target='_blank')
+          .fa-stack.fa-4x
+            i.fa.fa-circle.fa-stack-2x
+            i.fa.fa-instagram.fa-stack-1x
       .col-xs-6.col-sm-2.linkedin
-        .fa-stack.fa-4x
-          i.fa.fa-circle.fa-stack-2x
-          i.fa.fa-linkedin.fa-stack-1x
+        a(href='https://www.linkedin.com/pub/cara-simoneau/9b/32a/272', target='_blank')
+          .fa-stack.fa-4x
+            i.fa.fa-circle.fa-stack-2x
+            i.fa.fa-linkedin.fa-stack-1x
       .col-xs-6.col-sm-2.behance
-        .fa-stack.fa-4x
-          i.fa.fa-circle.fa-stack-2x
-          i.fa.fa-behance.fa-stack-1x
+        a(href='https://www.behance.net/carasimoneau', target='_blank')
+          .fa-stack.fa-4x
+            i.fa.fa-circle.fa-stack-2x
+            i.fa.fa-behance.fa-stack-1x
       .col-xs-6.col-sm-2.youtube
-        .fa-stack.fa-4x
-          i.fa.fa-circle.fa-stack-2x
-          i.fa.fa-youtube.fa-stack-1x
+        a(href='https://www.youtube.com/user/sugarPhlox', target='_blank')
+          .fa-stack.fa-4x
+            i.fa.fa-circle.fa-stack-2x
+            i.fa.fa-youtube.fa-stack-1x
       .col-xs-6.col-sm-2.twitch
-        .fa-stack.fa-4x
-          i.fa.fa-circle.fa-stack-2x
-          i.fa.fa-twitch.fa-stack-1x
-  .row.you-should-talk-to-me
+        a(href='http://www.twitch.tv/sugarphlox/profile', target='_blank')
+          .fa-stack.fa-4x
+            i.fa.fa-circle.fa-stack-2x
+            i.fa.fa-twitch.fa-stack-1x
+  .row.you-should-talk-to-me#contact
     .container-fluid
       .col-xs-12.col-sm-6.col-sm-offset-6
         .well
           h1 Contact Me
           p
-            | Feel free to contact me about job opportunities, questions about my work, or even to say hi. I'll be here.
+            | Feel free to contact me about job opportunities, questions about my work, or even to say hi. 
+            | I'll be here (if I'm not in the car or on the motorcycle. don't check emails and drive folks).
           form.form-horizontal(role='form', method='post', target='_blank', action='//formspree.io/sugarPhlox@gmail.com')
             .form-group
               label.col-sm-2.control-label(for='name') Name
