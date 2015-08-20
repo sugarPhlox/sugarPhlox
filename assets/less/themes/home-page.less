@@ -16,12 +16,17 @@ header {
   }
 }
 
-@media (max-width @screen-sm){
-  .logo {
+
+.logo {
+  display: block;
+  max-width: 100%;
+  height: auto;
+  margin: 0 auto;
+
+  @media (max-width: @screen-sm){
     max-width: 300px;
   }
 }
-
 
 .hey-hey-know-me {
   padding: @padding-large-vertical * 4 0;
