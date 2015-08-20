@@ -4,18 +4,17 @@
     <title>
     </title>
     <link rel="stylesheet" href="public/css/main.css">
+    <script src="bower_components/bootstrap/dist/bootstrap.js"></script>
     <script src="https://code.jquery.com/jquery-1.11.2.min.js"></script>
     <script type="text/javascript" src="public/js/navbar.js"></script>
   </head>
   <body>
     <nav class="navbar navbar-inverse navbar-fixed-top">
       <div class="container-fluid">
-        <!-- Brand and toggle get grouped for better mobile display-->
         <div class="navbar-header">
-          <button type="button" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false" class="navbar-toggle collapsed"><span class="sr-only">Toggle navigation</span><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></button><a href="#" class="navbar-brand">sugarPhlox.</a>
+          <btn type="button" data-toggle="collapse" data-target=".navbar-collapse" aria-expanded="false" class="navbar-toggle collapsed"><i class="fa fa-chevron-circle-down fa-2x"></i></btn><a href="index.html" class="navbar-brand">sugarPhlox.</a>
         </div>
-        <!-- Collect the nav links, forms, and other content for toggling-->
-        <div id="bs-example-navbar-collapse-1" class="collapse navbar-collapse">
+        <div class="collapse navbar-collapse">
           <ul class="nav navbar-nav navbar-right">
             <li><a href="#about">about</a></li>
             <li><a href="#portfolio">portfolio</a></li>
@@ -60,16 +59,12 @@
               My work has a wide range covering different interests and fields. This includes
               graphic design, front end development, photography, print making, and more.
             </p>
+            <p>Please go to</p><a href="https://www.behance.net/carasimoneau" target="_blank">
+              <div class="fa-stack fa-4x"><i class="fa fa-circle fa-stack-2x"></i><i class="fa fa-behance fa-stack-1x">           </i></div></a>
+            <h1>Behance</h1>
+            <p>to see my work.</p>
           </div>
         </div>
-        <div class="col-xs-12 col-sm-3"><img src="http://lorempixel.com/g/400/400/" class="img-responsive"></div>
-        <div class="col-xs-12 col-sm-3"><img src="http://lorempixel.com/g/400/400/" class="img-responsive"></div>
-        <div class="col-xs-12 col-sm-3"><img src="http://lorempixel.com/g/400/400/" class="img-responsive"></div>
-        <div class="col-xs-12 col-sm-3"><img src="http://lorempixel.com/g/400/400/" class="img-responsive"></div>
-        <div class="col-xs-12 col-sm-3"><img src="http://lorempixel.com/g/400/400/" class="img-responsive"></div>
-        <div class="col-xs-12 col-sm-3"><img src="http://lorempixel.com/g/400/400/" class="img-responsive"></div>
-        <div class="col-xs-12 col-sm-3"><img src="http://lorempixel.com/g/400/400/" class="img-responsive"></div>
-        <div class="col-xs-12 col-sm-3"><img src="http://lorempixel.com/g/400/400/" class="img-responsive"></div>
       </div>
     </div>
     <div id="social-media" class="row social-media">
@@ -127,7 +122,7 @@
                 <div class="col-sm-10 col-sm-offset-2">
                   <input id="submit" name="submit" type="submit" value="send" class="btn btn-primary">
                   <input type="text" name="_gotcha" style="display:none">
-                  <input type="hidden" name="_next" value="//site.io/thanks.html">
+                  <input type="hidden" name="_next" value="thanks.html">
                 </div>
               </div>
             </form>
