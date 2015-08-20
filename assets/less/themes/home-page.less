@@ -23,7 +23,7 @@ header {
 }
 
 .hey-hey-know-me {
-  padding: @padding-large-vertical * 4;
+  padding: @padding-large-vertical * 4 0;
   background-color: @white;
   color: @body-bg;
   line-height: 2;
@@ -35,7 +35,7 @@ header {
   }
 
   @media (max-width: @screen-sm) {
-    padding: @padding-large-vertical * 3 @padding-large-vertical;
+    padding: 0 @padding-large-vertical;
     text-align: center;
 
   }
@@ -70,6 +70,10 @@ header {
 
   .col-xs-12 {
     padding: @padding-large-vertical * 4;
+
+    @media (max-width: @screen-sm) {
+      padding: @padding-large-vertical * 2;
+    }
   }
 
   .twitter {
