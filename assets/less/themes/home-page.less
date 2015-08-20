@@ -10,17 +10,18 @@ header {
   background: -o-linear-gradient(top, @brand-primary, @brand-info);
   padding: @padding-large-vertical * 10 0;
   text-align: center;
-}
 
-@media (min-width: @screen-sm) {
-  header {
+  @media (min-width: @screen-sm) {
     min-height: 100%;
   }
+}
 
+@media (max-width @screen-sm){
   .logo {
     max-width: 300px;
   }
 }
+
 
 .hey-hey-know-me {
   padding: @padding-large-vertical * 4 0;
