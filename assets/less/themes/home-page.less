@@ -1,0 +1,163 @@
+header {
+  position: relative;
+  width: 100%;
+  min-height: auto;
+  background-color: @brand-primary;
+  background: -webkit-gradient(linear, left top, right bottom, from(@brand-primary), to(@brand-info));
+  background: -webkit-linear-gradient(top, @brand-primary, @brand-info);
+  background: -moz-linear-gradient(top, @brand-primary, @brand-info);
+  background: -ms-linear-gradient(top, @brand-primary, @brand-info);
+  background: -o-linear-gradient(top, @brand-primary, @brand-info);
+  padding: @padding-large-vertical * 10 0;
+  text-align: center;
+}
+
+@media (min-width: @screen-sm) {
+  header {
+    min-height: 100%;
+  }
+}
+
+.hey-hey-know-me {
+  padding: @padding-large-vertical * 4;
+  background-color: @white;
+  color: @body-bg;
+  line-height: 2;
+  text-align: justify;
+
+  img {
+    margin-top: @padding-large-vertical * 3;
+    text-align: center;
+  }
+
+  @media (max-width: @screen-sm) {
+    padding: @padding-large-vertical * 3 @padding-large-vertical;
+    text-align: center;
+
+  }
+}
+
+.portfolio, .social-media {
+  .container-fluid, .col-xs-12.col-sm-3 {
+    padding: 0;
+  }
+
+  .fa-behance {
+    color: @body-bg;
+  }
+}
+
+.portfolio {
+  .col-xs-12.text-center {
+    padding: @padding-large-vertical * 6;
+    line-height: 2;
+  }
+}
+
+.social-media {
+  text-align: center;
+  line-height: 2;
+  background-color: @white;
+  color: @body-bg;
+
+  a {
+    color: @white;
+  }
+
+  .col-xs-12 {
+    padding: @padding-large-vertical * 4;
+  }
+
+  .twitter {
+    background-color: @brand-info;
+    background: -webkit-gradient(linear, left top, right bottom, from(darken(@brand-info, 20%)), to(@brand-info));
+    background: -webkit-linear-gradient(top, darken(@brand-info, 20%), @brand-info);
+    background: -moz-linear-gradient(top, darken(@brand-info, 20%), @brand-info);
+    background: -ms-linear-gradient(top, darken(@brand-info, 20%), @brand-info);
+    background: -o-linear-gradient(top, darken(@brand-info, 20%), @brand-info);
+    padding: @padding-large-vertical * 8 0;
+  
+    .fa-stack-1x {
+      color: @brand-info;
+    }
+  }
+
+  .instagram {
+    background-color: @gray;
+    background: -webkit-gradient(linear, left top, right bottom, from(darken(@gray, 20%)), to(@gray));
+    background: -webkit-linear-gradient(top, darken(@gray, 20%), @gray);
+    background: -moz-linear-gradient(top, darken(@gray, 20%), @gray);
+    background: -ms-linear-gradient(top, darken(@gray, 20%), @gray);
+    background: -o-linear-gradient(top, darken(@gray, 20%), @gray);
+    padding: @padding-large-vertical * 8 0;
+
+    .fa-stack-1x {
+      color: @gray;
+    }
+  }
+
+  .linkedin {
+    background-color: @brand-success;
+    background: -webkit-gradient(linear, left top, right bottom, from(darken(@brand-success, 20%)), to(@brand-success));
+    background: -webkit-linear-gradient(top, darken(@brand-success, 20%), @brand-success);
+    background: -moz-linear-gradient(top, darken(@brand-success, 20%), @brand-success);
+    background: -ms-linear-gradient(top, darken(@brand-success, 20%), @brand-success);
+    background: -o-linear-gradient(top, darken(@brand-success, 20%), @brand-success);
+    padding: @padding-large-vertical * 8 0;
+
+    .fa-stack-1x {
+      color: @brand-success;
+    }
+  }
+
+  .youtube {
+    background-color: @brand-danger;
+    background: -webkit-gradient(linear, left top, right bottom, from(darken(@brand-danger, 20%)), to(@brand-danger));
+    background: -webkit-linear-gradient(top, darken(@brand-danger, 20%), @brand-danger);
+    background: -moz-linear-gradient(top, darken(@brand-danger, 20%), @brand-danger);
+    background: -ms-linear-gradient(top, darken(@brand-danger, 20%), @brand-danger);
+    background: -o-linear-gradient(top, darken(@brand-danger, 20%), @brand-danger);
+    padding: @padding-large-vertical * 8 0;
+
+    .fa-stack-1x {
+      color: @brand-danger;
+    }
+  }
+
+  .behance {
+    background-color: @brand-warning;
+    background: -webkit-gradient(linear, left top, right bottom, from(darken(@brand-warning, 20%)), to(@brand-warning));
+    background: -webkit-linear-gradient(top, darken(@brand-warning, 20%), @brand-warning);
+    background: -moz-linear-gradient(top, darken(@brand-warning, 20%), @brand-warning);
+    background: -ms-linear-gradient(top, darken(@brand-warning, 20%), @brand-warning);
+    background: -o-linear-gradient(top, darken(@brand-warning, 20%), @brand-warning);
+    padding: @padding-large-vertical * 8 0;
+
+    .fa-stack-1x {
+      color: @brand-warning;
+    }
+  }
+
+  .github {
+    background-color: @panel-default-heading-bg;
+    background: -webkit-gradient(linear, left top, right bottom, from(darken(@panel-default-heading-bg, 20%)), to(@panel-default-heading-bg));
+    background: -webkit-linear-gradient(top, darken(@panel-default-heading-bg, 20%), @panel-default-heading-bg);
+    background: -moz-linear-gradient(top, darken(@panel-default-heading-bg, 20%), @panel-default-heading-bg);
+    background: -ms-linear-gradient(top, darken(@panel-default-heading-bg, 20%), @panel-default-heading-bg);
+    background: -o-linear-gradient(top, darken(@panel-default-heading-bg, 20%), @panel-default-heading-bg);
+    padding: @padding-large-vertical * 8 0;
+
+    .fa-stack-1x {
+      color: @panel-default-heading-bg;
+    }
+  }
+}
+
+.you-should-talk-to-me {
+  background: url('../img/wrx-contactme.png') no-repeat fixed center center;
+  background-size: cover;
+  min-height: 500px;
+  padding-top: @padding-large-vertical * 10;
+}
+
+
