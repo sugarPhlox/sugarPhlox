@@ -1,0 +1,37 @@
+.modal-portfolio {
+  width: 100%;
+  padding-right: @padding-large-horizontal;
+  color: @gray-base;
+
+  @media(min-width: 768px) {
+    padding-left: @padding-large-horizontal;
+    padding-right: @padding-large-horizontal;
+  }
+
+  .modal-portfolio-header {
+
+    img:first-of-type {
+      width: 100%;
+      height: auto;
+      z-index: 2;
+      border-top-left-radius: 6px;
+      border-top-right-radius: 6px;
+    }
+
+    button.close {
+      position: absolute;
+      z-index: 5;
+      top: 10px;
+      right: 10px;
+    }
+  }
+
+  .modal-body {
+
+    img:first-of-type {
+      position: relative;
+      top: -95px;
+    }
+  }
+}
+
